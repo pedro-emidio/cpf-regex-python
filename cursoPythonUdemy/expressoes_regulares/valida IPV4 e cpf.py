@@ -32,7 +32,6 @@ ip_reg_exp = re.compile(r'''
 ''', flags=re.X)
 # para cópia:
 ip_reg_exp = re.compile(r'^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]|[0-9])\.?){4}\b$')
-myipv4 = '10.0.0.10'
 for i in range(301):
     ip = f'{i}.{i}.{i}.{i}'
     print(ip, ip_reg_exp.findall(ip))
